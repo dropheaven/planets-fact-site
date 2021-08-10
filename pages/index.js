@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <div>test</div>
+    <div className="text-center text-2xl">testing tailwindcss</div>
   )
 }
