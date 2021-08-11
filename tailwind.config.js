@@ -15,6 +15,10 @@ module.exports = {
         orange: '#CD5120',
         aqua: '#1EC2A4',
         blue: '#2D68F0'
+    },
+    fontFamily: {
+        antonio: 'Antonio, sans-serif',
+        spartan: 'Spartan, sans-serif'
     }
   },
   variants: {
