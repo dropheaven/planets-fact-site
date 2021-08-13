@@ -1,26 +1,32 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-
+import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
-    static async getInitialProps(ctx) {
-      const initialProps = await Document.getInitialProps(ctx)
-      return { ...initialProps }
-    }
-  
-    render() {
-      return (
-        <Html>
-          <Head>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap" rel="stylesheet" />
-          </Head>
-          <body className="bg-darkblue">
-            <Main />
-            <NextScript />
-          </body>
-        </Html>
-      )
-    }
+	static async getInitialProps(ctx) {
+		const initialProps = await Document.getInitialProps(ctx);
+		return { ...initialProps };
+	}
+
+	render() {
+		return (
+			<Html>
+				<Head>
+					<link rel="preconnect" href="https://fonts.googleapis.com" />
+					<link
+						rel="preconnect"
+						href="https://fonts.gstatic.com"
+						crossOrigin="true"
+					/>
+					<link
+						href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;600&display=swap"
+						rel="stylesheet"
+					/>
+				</Head>
+				<body className="bg-darkblue" style={{ fontSize: "14px" }}>
+					<Main />
+					<NextScript />
+				</body>
+			</Html>
+		);
+	}
 }
-  
-  export default MyDocument
+
+export default MyDocument;
