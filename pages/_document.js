@@ -20,7 +20,13 @@ class MyDocument extends Document {
 						rel="stylesheet"
 					/>
 				</Head>
-				<body className="bg-darkblue" style={{ fontSize: "14px" }}>
+				<body
+					className="bg-darkblue text-white"
+					style={{
+						fontSize: "14px",
+						backgroundImage: `url("/images/backgroundstars.svg")`,
+					}}
+				>
 					<Main />
 					<NextScript />
 				</body>
